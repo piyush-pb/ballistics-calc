@@ -1,0 +1,12 @@
+1. Import the math and numpy libraries.
+2.Prompt the user to enter the following values:
+The cross-sectional area of the bullet (in square meters).
+The initial speed of the bullet (in meters per second).
+The mass of the bullet (in kilograms).
+The height of the bullet from the ground (in meters).
+The distance of the target (in meters).
+3.Calculate the time it takes for the bullet to reach its peak height using the formula t = sqrt((2*h)/g), where h is the height of the bullet and g is the acceleration due to gravity.
+4.Calculate the distance traveled by the bullet using the formula x = (V0 * t) - (c * rho * A * (pow(v,2)) * (pow(t,2)))/(2 * m), where c is a constant value, rho is the density of air, A is the cross-sectional area of the bullet, v is the speed of the bullet, t is the time it takes for the bullet to reach its peak height, and m is the mass of the bullet.
+5.Calculate the angle at which the muzzle should be inclined using the formula Q = ((numpy.arctan(J))*57.32), where J is the slope of the line formed by the bullet's trajectory and the ground.
+6.Calculate the height at which the bullet will hit the target when it is parallel to the ground using the formula U = Y*tan(Q)*.017455, where Y is the distance between the bullet and the target and Q is the angle at which the muzzle should be inclined.
+7.Print the angle at which the muzzle should be inclined and the height at which the bullet will hit the target when it is parallel to the ground.
