@@ -1,0 +1,70 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-image:url(./bck.jpeg);
+    text-align: center;
+    }
+#top1{
+    /* font-family: 'Rubik Bubbles', cursive;
+    color: black;
+    font-size: 80px;
+    margin-top: 2%;
+    margin-bottom:2%; */
+    max-width: 100%;
+    max-height:350px;
+}
+.top2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #e1e1b2;
+    font-size:x-large;
+    margin-top: 1%;
+    margin-bottom:1%;
+}
+/* .container{
+   
+} */
+.text{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    margin-top: 2%;
+    margin-bottom:2%;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right:15%;
+    border: 1px solid;
+    border-color: #e1e1b2;
+    border-radius: 50%;
+
+}
+#button1, #button2,#option{
+    background-color: #6f855b;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    margin: 2%;
+    padding-top:1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#obullet{
+    border: 2px solid white;
+    border-radius: 50%;
+    
+}
+#ropt{
+    margin: 100%;
+    border: 2px solid #e1e1b2;
+    width: 100%;
+}
+#result{
+    color: wheat;
+    size: 100px;
+}

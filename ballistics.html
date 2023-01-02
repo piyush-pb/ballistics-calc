@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <!-- <script src="bsllistics.js"></script> -->
+    <link rel="stylesheet" href="./ballistic.css">
+    <script src="./ballistics.js"></script>
+    <title>Ballistics</title>
+
+
+</head>
+<body id="main">
+
+    <img src="./logo.jpeg" id="top1" alt="ballistic calculator">
+<div class="container">
+<div>
+    <!-- <span>This Formulae is used to calculate bullate range</span> <br>
+    <img src="./formulae.png" alt="Bullet Range Formula"> -->
+</div>
+
+
+    <form >
+        <div>
+            <h3 class="top2">Bullet Options</h3>
+            <select name="bulletoption " onchange="calculate();" id="option">
+                 <option value="op0">NONE</option>
+                 <option value="op1">AKM</option>
+                 <option value="op2">Dragunov SVD</option>
+                 <option value="op3">Shyr SSG69</option>
+                 <option value="op4">imi Galil</option>
+                 <option value="op5">KOCH PSGE</option>
+                 <option value="op6">SAKDTRG</option>
+                 <option value="op7">MAUSER SP66</option>
+                 <option value="op8">Tikka f3</option>
+                 <option value="op9">SSG 3000</option>
+                 <option value="op10">Pistol Auto 9mm 1A</option>
+                 <option value="op11">Glock</option>
+                 <option value="op12">KOCHMPS</option>
+                 <option value="op13">Micro VZI</option>
+                 <option value="op14">IBI FNSAS</option>
+                 <option value="op15">SIG 716i</option>
+                 <option value="op16">AK 203</option>
+                 <option value="op17">IMI FAVOR TARZ 1</option>
+                 <option value="op18">M4A1 Carline</option>
+                 <option value="op19">SCARL</option>
+                 <option value="op20">SCARH</option>
+                 <option value="op21">T91AR</option>
+             </select>
+         </div>
+        <h3 class="top2">or Enter Values</h3>
+    <div id="obullet">
+    <div class="text">
+        <label for="A">Cross-Sectional Area of a Bullet in me2 (A) :</label>
+        <input type="number" name="A" id="A">
+    </div>
+    <div class="text">
+        <label for="V0">Initial Muzzel speed or Bullet Velocity in m/s (v) :</label>
+        <input type="number" name="V0" id="V0">
+    </div>
+    <div class="text">
+        <label for="m"> Mass of Bullet in kg (m) :</label>
+        <input type="number" name="m" id="m">
+    </div>
+    </div>
+    <h3 class="top2">Enter General Things</h3>
+    <div class="text">
+        <label for="D"> the Distance of target in m (d) :</label>
+        <input type="number" name="D" id="D">
+    </div>
+    <div class="text">
+        <label for="h">Height of Bullet from Ground in m (h):</label>
+        <input type="number" name="h" id="h">
+    </div>
+    <div class="text" id="rhopt">
+        <label for="rhoi">Choose region for air density in kg/cubic m (&rho;):</label>
+        <select name="rhooption" id="rhoi">
+            <option value="ro1">Ultra Cold (-50)</option>
+            <option value="ro2">Sub Zero (0 to -10)</option>
+            <option value="ro3">Cool (10 to 20)</option>
+            <option value="ro4" selected>Tropical (35)</option>
+            <option value="ro5">Hot (40 to 50)</option>
+    </div>
+    <div >
+        <input type="button" onclick="calculate()" value="CALCULATE" id="button1">
+        <input type="reset" value="RESET" id="button2">
+    </div>
+    </form>
+</div>
+<p id="result"></p>
+</body>
+</html>
