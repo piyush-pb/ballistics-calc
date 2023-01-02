@@ -1,3 +1,5 @@
+Algorithm
+
 1. Import the math and numpy libraries.
 2.Prompt the user to enter the following values:
 The cross-sectional area of the bullet (in square meters).
@@ -10,3 +12,35 @@ The distance of the target (in meters).
 5.Calculate the angle at which the muzzle should be inclined using the formula Q = ((numpy.arctan(J))*57.32), where J is the slope of the line formed by the bullet's trajectory and the ground.
 6.Calculate the height at which the bullet will hit the target when it is parallel to the ground using the formula U = Y*tan(Q)*.017455, where Y is the distance between the bullet and the target and Q is the angle at which the muzzle should be inclined.
 7.Print the angle at which the muzzle should be inclined and the height at which the bullet will hit the target when it is parallel to the ground.
+
+
+Flowchart:
+
+start
+                                              |
+                                              |
+                                      prompt user for inputs
+                                              |
+                                              |
+                                              |
+                                       calculate t using h and g
+                                              |
+                                              |
+                                              |
+                                       calculate x using V0, t, c, rho, A, v, and m
+                                              |
+                                              |
+                                              |
+                                       calculate Q using J
+                                              |
+                                              |
+                                              |
+                                       calculate U using Y and Q
+                                              |
+                                              |
+                                              |
+                                           print Q and U
+                                              |
+                                              |
+                                              |
+                                            end
